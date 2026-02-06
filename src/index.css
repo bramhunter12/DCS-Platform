@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Prestige Watch Exchange Design System
+  =====================================
+  Trust-first luxury watch exchange
+  Black / Gold / Soft White palette
+  Institutional, restrained, premium
+*/
+
+@layer base {
+  :root {
+    /* Core palette */
+    --background: 40 14% 98%;          /* Soft white #FAFAF8 */
+    --foreground: 0 0% 0%;              /* Pure black */
+    
+    /* Card surfaces */
+    --card: 0 0% 100%;                  /* Pure white */
+    --card-foreground: 0 0% 0%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    
+    /* Primary - Gold accent */
+    --primary: 43 52% 55%;              /* Gold #C4A35A */
+    --primary-foreground: 0 0% 0%;
+    
+    /* Secondary - Black */
+    --secondary: 0 0% 0%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Muted - Subtle grays */
+    --muted: 40 6% 93%;
+    --muted-foreground: 0 0% 40%;
+    
+    /* Accent - Gold (same as primary) */
+    --accent: 43 52% 55%;
+    --accent-foreground: 0 0% 0%;
+    
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders and inputs */
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 43 52% 55%;
+    
+    /* Sharp corners for premium feel */
+    --radius: 0px;
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 43 52% 55%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 43 52% 55%;
+    
+    /* Custom tokens */
+    --gold: 43 52% 55%;
+    --gold-light: 43 52% 70%;
+    --gold-dark: 43 52% 40%;
+    --surface-elevated: 0 0% 100%;
+    --text-subtle: 0 0% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 43 52% 55%;
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    
+    --accent: 43 52% 55%;
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 43 52% 55%;
+    
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 43 52% 55%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 43 52% 55%;
+    
+    --gold: 43 52% 55%;
+    --gold-light: 43 52% 70%;
+    --gold-dark: 43 52% 40%;
+    --surface-elevated: 0 0% 8%;
+    --text-subtle: 0 0% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  /* Typography hierarchy */
+  h1, h2, h3, h4 {
+    @apply font-serif font-medium tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer utilities {
+  /* Gold text utility */
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+  
+  /* Premium border */
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+  
+  /* Subtle separator */
+  .separator-gold {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent;
+  }
+}
