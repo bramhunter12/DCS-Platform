@@ -46,6 +46,12 @@ export function Header() {
           >
             Community
           </Link>
+          <Link 
+            to="/page-2" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Page 2
+          </Link>
           {canSell && (
             <Link 
               to="/sell" 
