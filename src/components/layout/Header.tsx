@@ -38,7 +38,13 @@ export function Header() {
             to="/browse" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            Browse
+            Browse Watches
+          </Link>
+          <Link 
+            to="/browse-sellers" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Browse Sellers
           </Link>
           <Link 
             to="/community" 
