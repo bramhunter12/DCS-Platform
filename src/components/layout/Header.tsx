@@ -46,6 +46,12 @@ export function Header() {
           >
             Community
           </Link>
+          <Link 
+            to="/appraisal" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Appraisal
+          </Link>
           {canSell && (
             <Link 
               to="/sell" 

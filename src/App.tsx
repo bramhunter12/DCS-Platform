@@ -9,6 +9,7 @@ import Auth from "./pages/Auth";
 import Browse from "./pages/Browse";
 import Dashboard from "./pages/Dashboard";
 import Community from "./pages/Community";
+import Appraisal from "./pages/Appraisal";
 import CreateListing from "./pages/CreateListing";
 import Pricing from "./pages/Pricing";
 import SellerOnboarding from "./pages/SellerOnboarding";
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/browse" element={<Browse />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/community" element={<Community />} />
+            <Route path="/appraisal" element={<Appraisal />} />
             <Route path="/sell/new" element={<CreateListing />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/onboarding/seller" element={<SellerOnboarding />} />

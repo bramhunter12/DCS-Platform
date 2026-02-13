@@ -33,6 +33,16 @@ export default function Index() {
                   Become a Seller
                 </Button>
               </Link>
+              <Link to="/community">
+                <Button size="lg" variant="outline" className="text-base px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  Forum
+                </Button>
+              </Link>
+              <Link to="/appraisal">
+                <Button size="lg" variant="outline" className="text-base px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  Watch Appraisal Tool
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
