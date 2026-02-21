@@ -9,7 +9,8 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative py-24 lg:py-32 overflow-hidden bg-black text-white">
         <div className="container">
-          <div className="max-w-3xl">
+          <div className="flex items-center gap-12">
+          <div className="max-w-3xl flex-1">
             <p className="text-sm uppercase tracking-widest text-primary mb-4">
               The Prestige Watch Exchange
             </p>
@@ -44,6 +45,10 @@ export default function Index() {
                 </Button>
               </Link>
             </div>
+          </div>
+          <div className="hidden lg:flex flex-shrink-0 items-center justify-center">
+            <img src="/DCSLogo.png" alt="DCS Logo" className="w-[620px] h-[620px] object-contain" />
+          </div>
           </div>
         </div>
         
